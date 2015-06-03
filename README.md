@@ -1,28 +1,12 @@
-# budo-gulp-react-starter
+# budo-gulp-react-flux-starter
 
-[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
+It is starter kit for  react and flux.
 
-A "starter kit" with [budō](https://github.com/mattdesl/budo), SASS, React and Gulp.
-It is based on [budo-gulp-starter](https://github.com/mattdesl/budo-gulp-starter).
-
-Some highlights:
-
-  - npm dependencies with browserify
-  - fast incremental bundling with watchify
-  - SASS for CSS pre-processing
-  - LiveReload browser refresh on `bundle.js` update
-  - LiveReload CSS injection on *.scss changes
-  - Babel for ES6 transpiling
-  - React components
-  - Syntax errors shown in the browser during development
-
-Note that budō is not tied to Gulp, and in some cases it may be easier to use it's command-line version. 
 
 ## Usage
 
 ```sh
-git clone https://github.com/mattdesl/budo-gulp-starter.git
-cd budo-gulp-react-starter
+
 
 # install dependencies
 npm install
