@@ -17,6 +17,7 @@ const babelify = require('babelify');
 const reactify = require('reactify');
 const autoprefixer = require('gulp-autoprefixer');
 const errorify = require('errorify');
+const sourcemaps = require('gulp-sourcemaps');
 
 const entry = './src/js/index.js';
 const outfile = 'bundle.js';
@@ -24,6 +25,7 @@ const outfile = 'bundle.js';
 //our CSS pre-processor
 gulp.task('sass', function () {
     gulp.src('./src/sass/main.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass({
             errLogToConsole: true,
             outputStyle: argv.production ? 'compressed' : undefined,
@@ -33,6 +35,7 @@ gulp.task('sass', function () {
             browsers: ['last 2 versions'],
             cascade: false
         }))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('./app'))
 });
 
