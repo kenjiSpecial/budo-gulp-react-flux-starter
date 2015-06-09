@@ -20,6 +20,7 @@
     "errorify": "*",
     "events": "*",
     "flux": "*",
+    "gulp-sourcemaps": "^1.5.2",
     "garnish": "*",
     "gulp": "*",
     "gulp-autoprefixer": "*",
